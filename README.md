@@ -1,2 +1,1 @@
-# payslip
-Australian payslip generator
+australian payslip
