@@ -1,17 +1,25 @@
-
-
+/* Universal Selector Reset */
+/* "*" targets all HTML elements. */
+/* margin: 0; and padding: 0; remove default spacing added by browsers. */
+/* box-sizing: border-box; ensures that padding and border are included inside the element’s total width/height, making layouts easier to control. */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Remove Number Input Spinners (Chrome/Safari) */
+/* Targets the spin buttons (up/down arrows) that appear inside number input fields in WebKit browsers (Chrome, Safari). */
+/* -webkit-appearance: none; hides them. */
+/* margin: 0; ensures no extra spacing is applied around them. */
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
+/* Remove Spinner in Firefox */
+/* It forces number inputs to look like regular text fields, effectively removing the built-in increment/decrement arrows. */
 input[type="number"] {
   -moz-appearance: textfield;
 }
